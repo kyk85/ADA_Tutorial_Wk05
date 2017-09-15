@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADA WOD Tracker</title>
+	<link rel="stylesheet" type="text/css" href="WOD_Tracker.css">
+</head>
+<body>
+
+<h1>ADA WOD Tracker by Batch 3</h1>
+
+<div class="container">
+<h2>Add New WOD</h2>
+<label>Question</label><br>
+<input type="text" name="newQuestion" id="wodInput" required><br>
+<label>Difficulty</label><br>
+<input type="text" name="newwDifficulty" id="difficultyInput" required><br>
+<label>Assigned To</label><br>
+<input type="text" name="newAssigned" id="assignedInput" required><br>
+<button onclick="addWOD()" id="add">Add</button>
+
+</div>
+
+<br/>
+
+<div class="container">
+<h2>The WODs</h2>
+
+<table id="wodTable">
+<tr id="tableHeader">
+	<th>Question</th>
+	<th>Difficulty</th>
+	<th>Assigned to</th>
+</tr>
+</table>
+
+</div>
+
+<br/>
+
+
+<div id="info">
+<h2>About WOD</h2>
+<p id="wodName"></p>
+<p>Difficulty: <span id="wodDifficulty"></span></p>
+<p>Assigned to: <span id="wodAssigned"></span></p>
+<p>Status: <span id="wodStatus"></span></p>
+<p><span id="doneButton"></span><span id="deleteButton"></span></p>
+</div>
+
+<script type="text/javascript" src="WOD_Tracker.js"></script>
+
+
+</body>
+</html>
